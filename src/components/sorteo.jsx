@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Participantes } from "./participantes";
 import { ThreeDots } from 'react-loader-spinner';
 import "../estilos/lista.css"
+import Reloj from "./reloj";
 
 
 function Sorteo() {
 
-    const participantes = ['Stephen Curry', 'Kimi Raikonnen', 'Mclaren West', 'Red Bull', 'Monza Italia', 'Giannis Anteto',
-        'Stephen Curry', 'Kimi Raikonnen', 'Mclaren West', 'Red Bull', 'Monza Italia', 'Giannis Anteto',
-        'Stephen Curry', 'Kimi Raikonnen', 'Mclaren West', 'Red Bull', 'Monza Italia', 'Giannis Anteto',]
+    const participantes = ["Juan", "María", "Luis", "Ana", "Carlos", "Laura", "Pedro", "Sofía", "Diego", "Lucía", 
+    "Javier", "Valentina", "Miguel", "Elena", "Andrés", "Camila", "José", "Isabella", "Gabriel", "Daniela"]
 
 
     const [ganador1, setGanador1] = useState('')
@@ -45,15 +45,15 @@ function Sorteo() {
         <section className="master">
             <h2> Participantes </h2>
                 <Participantes participantes={participantes} />
-                
-
+                <Reloj/>
 
                 <div className="relojsorteo">
                     <p> Se habilitara el 29/04</p>
                 </div>
                     
+                {/* disabled={sorteoRealizado} */}
 
-                <button onClick={() => { generarGanador(); setSorteoRealizado(true); }} disabled={sorteoRealizado}> 
+                <button onClick={() => { generarGanador(); setSorteoRealizado(true); }} >  
                 Sortear 
                 </button>
 

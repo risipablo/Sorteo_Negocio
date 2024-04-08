@@ -2,11 +2,41 @@
 .inicio{
     color: #232324;
     text-align: center;
-    align-items: center;
-    padding: 4rem 0px;
+    margin: 6rem auto;
+
 }
 
-.sorteo h2{
-    font-size: 1rem;
-    margin: 20px 0px 0px;
+h2{
+    margin: 12px 0;
+    padding: 0px 9px;
+    font-size: 1.4rem;
 }
+
+a{
+
+    padding: 25px 0px;
+}
+
+.participar,
+.carousel,
+.sorteo,
+.redes{
+    margin: 2.7rem auto;
+    padding: 12px 4px;
+    
+}
+
+
+.sorteo p{
+    font-weight: 600;
+    padding: 2px 7px;
+    font-size: .9rem;
+    color: rgb(224, 28, 28);
+}
+
+
+.iconos i{
+    font-size: 2.5rem;
+    margin: 1.2rem 2rem;
+}
+

@@ -1,12 +1,108 @@
 
 .reglas{
     margin: 7rem auto 2rem;
-    min-height: 100vh;
     text-align: center;
+    color: #080616;
+    cursor: pointer;
+}
+
+.reloj{
+    color: red;
 }
 
 .reglas h2{
-    margin: 2rem 2rem 0rem;
+    margin: 2rem 2rem ;
     font-weight: 700;
+    
+}
+.numeros a{
+    font-weight: 700;
+}
+
+.numeros i{
+    font-size: 1.8rem;
+    margin: 12px auto;
+}
+
+.seg i{
+    color: rgb(250, 14, 14);
+}
+
+.ter i{
+    color: rgb(14, 167, 238);
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.numeros > div {
+    flex: 10 100%; /* Ocupa todo el ancho */
+    max-width: 300px; /* Ancho máximo */
+    margin: 20px 1rem;
+    text-align: center;
+}
+
+.numeros p {
+    padding: 0px 12px;
+    margin:  8px auto;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.pri,
+.seg,
+.ter {
+    border: 1px solid #080616;
+    padding: 2rem 0.5rem;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilos adicionales para versiones móviles */
+@media (max-width: 768px) {
+    .numeros > div {
+        max-width: calc(50% - 40px); /* Ancho máximo del 50% menos el espacio */
+    }
+}
+
+/* Estilos adicionales para versiones aún más pequeñas */
+@media (max-width: 480px) {
+    .numeros > div {
+        max-width: calc(100% - 40px); /* Ancho máximo del 100% menos el espacio */
+    }
+}
+
+/* Hover efecto */
+.pri:hover,
+.seg:hover,
+.ter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos adicionales para texto */
+span {
+    font-weight: bold;
     color: #080616;
+    display: flex;
+    margin: 8px 0px;
+}
+
+
+.info{
+    margin: 2.2rem;
+}
+
+h3{
+    margin: 18px auto;
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1rem;
 }

@@ -24,9 +24,9 @@ function NavMenu() {
             <div className='navbar'>
 
                 <div className={`menu ${open ? 'open' :"" }`}>
-                    <NavLink to="/"  onClick={cerrarMenu}> <a> Inicio</a></NavLink>
-                    <NavLink to="/sorteo" onClick={cerrarMenu}> <a> Sorteo</a></NavLink>
-                    <NavLink to="/participar"  onClick={cerrarMenu}> <a> ¿Como participar?</a></NavLink>
+                    <NavLink to="/"  onClick={cerrarMenu}> <a> 🐾 Inicio</a></NavLink>
+                    <NavLink to="/sorteo" onClick={cerrarMenu}> <a>🐾 Sorteo</a></NavLink>
+                    <NavLink to="/participar"  onClick={cerrarMenu}> <a> 🐾 ¿Como participar?</a></NavLink>
                 </div>
 
 

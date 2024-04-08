@@ -29,7 +29,7 @@
 
 .menu a:hover {
     transition: .4s;
-    color: #202022fb;
+    color: #363636fb;
 }
 
 .menu-icon {
@@ -40,7 +40,7 @@
 .active a {
     border-bottom: 2px solid;
     padding: 12px;
-    color: #202022fb;
+    color: #f0ecec;
 }
 
 

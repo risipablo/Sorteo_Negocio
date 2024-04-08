@@ -66,8 +66,8 @@
     .listado-item {
         color: #080616;
         font-weight: 600;
-        padding: 0.6rem 1rem;
-        flex: 1 1 33%;
+        padding: 0.6rem;
+        flex: 1 1 30%;
     }
 
     .ganadores{
