@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Participantes } from "./participantes";
 import { ThreeDots } from 'react-loader-spinner';
+import "../estilos/lista.css"
+
 
 function Sorteo() {
 
@@ -8,10 +10,12 @@ function Sorteo() {
         'Stephen Curry', 'Kimi Raikonnen', 'Mclaren West', 'Red Bull', 'Monza Italia', 'Giannis Anteto',
         'Stephen Curry', 'Kimi Raikonnen', 'Mclaren West', 'Red Bull', 'Monza Italia', 'Giannis Anteto',]
 
+
     const [ganador1, setGanador1] = useState('')
     const [ganador2, setGanador2] = useState('')
     const [ganador3, setGanador3] = useState('')
 
+    const [sorteoRealizado, setSorteoRealizado] = useState(true);
     const [mostrarSpinner, setMostrarSpinner] = useState(false);
 
     const generarGanador = () => {
@@ -29,35 +33,49 @@ function Sorteo() {
             const ganador3 = participantes[ganador[2]];
             setGanador1(ganador1);
             setGanador2(ganador2);
-            setGanador3(ganador3)
+            setGanador3(ganador3);
+                setSorteoRealizado(false);
                 setMostrarSpinner(false);
         }, 3000)
     }
+
+
 
     return (
         <section className="master">
             <h2> Participantes </h2>
                 <Participantes participantes={participantes} />
-            
-                <button onClick={generarGanador} > Sortear </button>
+                
+
+
+                <div className="relojsorteo">
+                    <p> Se habilitara el 29/04</p>
+                </div>
+                    
+
+                <button onClick={() => { generarGanador(); setSorteoRealizado(true); }} disabled={sorteoRealizado}> 
+                Sortear 
+                </button>
+
                 {mostrarSpinner && 
                     <div style={{ display: 'flex', justifyContent: 'center', alignIjtetems: 'center', height: '100px' }}>
                         <ThreeDots
                             visible={true}
-                            height="80"
-                            width="80"
+                            height="100"
+                            width="100"
                             color="purple" // Cambiar el color a púrpura
                             radius="9"
                             ariaLabel="three-dots-loading"
                         />
                     </div>}
-                    <div className="ganadores">
-                        <h2> {
+                    <div className="ganadores" >
+                        <h2 > {
                         ganador1 && ganador2 && ganador3 && (
                             <>
-                                <p> Primer puesto: {ganador1}.  </p> 
-                                <p> Segundo puesto: {ganador2}. </p> 
-                                <p> Tercer puesto:  {ganador3}.</p>
+                            <p className="ganador4"> Felicidades a los ganadores</p>
+                                <p className="ganador1"> Primer puesto: {ganador1}.  </p> 
+                                <p className="ganador2"> Segundo puesto: {ganador2}. </p> 
+                                <p  className="ganador3"> Tercer puesto:  {ganador3}.</p>
                             </>
                             )
                         }

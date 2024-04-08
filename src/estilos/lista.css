@@ -1,0 +1,116 @@
+
+    .master{
+        margin: 7rem auto 2rem;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    .master h2{
+        margin: 2rem 2rem 0rem;
+        font-weight: 700;
+        color: #080616;
+    }
+
+    .master p{
+        color:#080616;
+    }
+
+    button {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 0.6em 1.2em;
+        margin: 2rem 1rem;
+        font-size: 1em;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: rgb(158, 76, 235);
+        cursor: pointer;
+        transition: border-color 0.25s;
+        color:#ece6e6;
+        letter-spacing: 2px;
+    }
+    button:hover {
+        border-color: #646cff;
+    }
+    button:focus,
+    button:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+
+    .relojsorteo{
+        color: #080616;
+    }
+
+
+
+
+    .participantes{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 18px;
+        /* padding: 0px 12px; */
+        border: 1px solid #383737;
+        border-radius: 9px ;
+
+    }
+
+
+    .listado {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .listado-item {
+        color: #080616;
+        font-weight: 600;
+        padding: 0.6rem 1rem;
+        flex: 1 1 33%;
+    }
+
+    .ganadores{
+    margin: 1rem 0;
+    }
+
+
+    .ganadores p {
+        margin: 8px 0px;
+        padding: 8px ;
+        
+    }
+
+    .ganadores p {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .ganador4{
+        animation: aparecer 1s 4s forwards ;
+    }
+    .ganador1 {
+        animation: aparecer 1s 3s forwards;
+    }
+
+    .ganador2 {
+        animation: aparecer 1s 2s forwards;
+    }
+
+    .ganador3 {
+        animation: aparecer 1s 1s forwards;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+
+    }

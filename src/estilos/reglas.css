@@ -1,0 +1,12 @@
+
+.reglas{
+    margin: 7rem auto 2rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.reglas h2{
+    margin: 2rem 2rem 0rem;
+    font-weight: 700;
+    color: #080616;
+}
