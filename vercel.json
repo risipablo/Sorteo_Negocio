@@ -1,7 +1,0 @@
-{
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/src/imagenes/(.*)", "dest": "/src/imagenes/$1" }
-    ]
-  }
-  
