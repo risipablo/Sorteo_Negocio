@@ -3,16 +3,20 @@ import { NavLink } from "react-router-dom"
 import "../estilos/inicio.css"
 import Reloj from "./reloj"
 import Carousel from "./carousel";
+import imagen1 from "../imagenes/pata.png"
+import video1 from "../imagenes/fe.mp4"
 
 
 export const Inicio = () =>{
     
+    const imagen = [imagen1]
+    const video = [video1]
 
     return(
         <section className="inicio">
             <section className="video-container">
                 <video autoPlay loop>
-                    <source src="/src/imagenes/fe.mp4" type="video/mp4" />
+                    <source src={video} type="video/mp4" />
                 </video>
             </section>
 
@@ -25,7 +29,7 @@ export const Inicio = () =>{
             </section>
 
             <div className="imagen">
-                <img src="/src/imagenes/pata.png" alt="" />
+                <img src={imagen} alt="" />
             </div>
 
             <section className="carousel">
@@ -37,7 +41,7 @@ export const Inicio = () =>{
 
 
             <section className="sorteo">
-                <h3>El sorteo finaliza en  </h3>
+                <h2>El sorteo finaliza en  </h2>
                 <Reloj/>
                 
                 <p> Los ganadores se anunciaran el 29/04 por Instagram</p>

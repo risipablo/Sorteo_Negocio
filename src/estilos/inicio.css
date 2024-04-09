@@ -92,3 +92,52 @@ h2{
     color: #3b5998; /
 }
 
+/* Estilos para dispositivos de escritorio (a partir de 800px) */
+@media (min-width: 800px) {
+    .inicio {
+        margin: 3.2rem auto;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .video-container {
+        padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+    }
+
+    .par {
+        margin: 2rem auto 1rem;
+    }
+
+    .par a {
+        font-size: 1.4rem;
+    }
+
+    .imagen {
+        padding: 3rem 0;
+    }
+
+    .imagen img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .participar,
+    .carousel,
+    .sorteo,
+    .redes {
+        margin: 2.9rem auto 0;
+        padding: 12px 0;
+    }
+
+    .sorteo p {
+        padding: 2px 0;
+        font-size: 1rem;
+    }
+
+    .iconos i {
+        font-size: 3rem;
+        margin: 1.8rem 3rem 0;
+    }
+}
