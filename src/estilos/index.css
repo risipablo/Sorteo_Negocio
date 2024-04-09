@@ -19,8 +19,6 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   min-height: 100vh;
-  background-color: #EDEDED;
-  color:#ece6e6;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }

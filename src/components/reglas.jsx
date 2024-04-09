@@ -11,15 +11,15 @@ function Reglas(){
             
             <div className="numeros">
                 <div className="pri">
-                    <p> <span> Paso 1:  </span> Seguirnos en nuestro  <a href="https://www.instagram.com/bambinapetshop/">Instagram  </a> oficial </p>
+                    <p> <span> Paso 1 </span> Seguirnos en nuestro  <a href="https://www.instagram.com/bambinapetshop/">Instagram  </a> oficial </p>
                     <i className="fa-solid fa-plus"> </i>
                 </div>
                 <div className="seg">
-                    <p> <span> Paso 2: </span> Darle me gusta al post publicado </p>
+                    <p> <span> Paso 2 </span> Darle me gusta al post publicado </p>
                     <i className="fa-solid fa-heart"></i>
                 </div>
                 <div className="ter">
-                    <p> <span> Paso 3 : </span> Compartir ese mismo post por historias y etiquetarnos</p>
+                    <p> <span> Paso 3 </span> Compartir ese mismo post por historias y etiquetarnos</p>
                     <i className="fa-solid fa-hashtag"></i>
                 </div>
             </div>

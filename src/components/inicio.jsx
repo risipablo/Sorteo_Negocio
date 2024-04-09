@@ -10,18 +10,31 @@ export const Inicio = () =>{
 
     return(
         <section className="inicio">
+            <section className="video-container">
+                <video autoPlay loop>
+                    <source src="/src/imagenes/fe.mp4" type="video/mp4" />
+                </video>
+            </section>
 
-            <h1>Sorteo de aniversario</h1>
-
-            <div className="carousel">
-                <h2> ¡Participa por estos premios! </h2>
-                    <Carousel />
-            </div>
 
             <section className="participar">
                 <h2>¿ Como participar ?</h2>
-                <NavLink to="/participar"> <a> Ver instrucciones </a></NavLink>
+                <div className="par">
+                <NavLink to="/participar"> <span>👉</span> <a> Ver instrucciones </a></NavLink>
+                </div>
             </section>
+
+            <div className="imagen">
+                <img src="/src/imagenes/pata.png" alt="" />
+            </div>
+
+            <section className="carousel">
+                <h2> ¡Participa por estos premios! </h2>
+                    <Carousel />
+                    <NavLink to="/premios"> <span>👉</span> <a> Ver premios </a></NavLink>
+            </section>
+
+
 
             <section className="sorteo">
                 <h3>El sorteo finaliza en  </h3>
@@ -32,15 +45,14 @@ export const Inicio = () =>{
             </section>
 
             <section className="redes">
-                <h2> Seguinos en nuestras redes </h2>
+                <h2> Nuestras redes </h2>
                 <div className="iconos">
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-instagram"> <a href="https://www.instagram.com/bambinapetshop/"></a></i>
+                <i className="fa-brands fa-facebook"> <a href="https://www.facebook.com/Bambina.alimentosyaccesorios/"></a></i>
                 </div>
             </section>
 
-            
-
         </section>
+
     )
 }

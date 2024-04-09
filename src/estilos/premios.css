@@ -1,0 +1,105 @@
+
+
+.premios{
+    margin: 7rem auto 0rem;
+    text-align: center;
+    color: #080616;
+    cursor: pointer;
+}
+
+
+.premios h2{
+    margin: 2rem 2rem ;
+    font-weight: 700;
+    color: #080616;
+}
+
+h3 {
+    line-height: 1.4;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0px 18px;
+}
+
+.texto {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+.texto li {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.texto li:before {
+
+    color: #f1592a; /* Color naranja */
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.texto li span {
+    font-weight: bold;
+    color: #f1592a; /* Color naranja */
+    display: flex;
+    font-size: 1.2rem;
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 768px) {
+    .texto {
+        padding: 30px;
+    }
+
+    .texto li {
+        font-size: 18px;
+    }
+}
+
+.atencion {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.atencion h3{ 
+    color: rgb(206, 10, 10);
+    font-size: 1.4rem;
+}
+
+.atencion p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.atencion p:last-child {
+    margin-bottom: 0;
+}
+
+.atencion p::before {
+    margin-right: 5px;
+    color: #5cb85c; /* Color verde */
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 768px) {
+    .atencion {
+        padding: 30px;
+    }
+
+    .atencion p {
+        font-size: 18px;
+    }
+}

@@ -8,12 +8,24 @@
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center; 
     padding: 9px;
 }
 
+.logo {
+    order: 2; 
+}
+
+.logo p{
+    color:#f0ecec;
+    font-size: 1.2rem;
+}
+
+
 .menu {
     display: flex;
+
 }
 
 .menu a {
@@ -45,10 +57,12 @@
 
 
 @media (max-width: 850px) {
+
     .navbar {
         padding: 9px;
-        justify-content: left;
     }
+
+
 
     .menu {
         position: absolute;
@@ -97,9 +111,9 @@
 
     .menu a {
         color: #202022fb;
-        margin:  1rem 0 0.6rem;
+        margin:  1.7rem 0 1rem;
         font-size: 1rem;
-        padding: 12px 8px ;
+        padding:  8px ;
     }
 
 }

@@ -2,28 +2,71 @@
 .inicio{
     color: #232324;
     text-align: center;
-    margin: 6rem auto;
-
+    margin: 3.2rem auto;
 }
 
 h2{
     margin: 12px 0;
-    padding: 0px 9px;
     font-size: 1.4rem;
+    letter-spacing: 1px;
 }
 
-a{
 
-    padding: 25px 0px;
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%; 
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel,
+.redes h2{
+    color: rgb(144, 50, 233);
+}
+
+.par{
+    margin: 2rem auto 1rem;
+}
+
+.par a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: .7rem;
+}
+
+.imagen{
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.imagen img{
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.carousel a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: .7rem;
 }
 
 .participar,
 .carousel,
 .sorteo,
 .redes{
-    margin: 2.7rem auto;
-    padding: 12px 4px;
-    
+    margin: 2.9rem auto 0;
+    padding: 12px 6px;
+    width: 100%;
 }
 
 
@@ -37,6 +80,15 @@ a{
 
 .iconos i{
     font-size: 2.5rem;
-    margin: 1.2rem 2rem;
+    margin: 1.8rem 2rem 0px;
+}
+
+.fa-instagram {
+    color: #b43a3a; 
+}
+
+
+.fa-facebook {
+    color: #3b5998; /
 }
 
