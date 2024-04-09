@@ -1,9 +1,9 @@
 // Carousel.js
 import { useState,useRef } from 'react';
 import '../estilos/carousel.css';
-import image1 from '../src/imagenes/1.jpg';
-import image2 from '../src/imagenes/2.jpg';
-import image3 from '../src/imagenes/3.jpg';
+import image1 from '../imagenes/1.jpg';
+import image2 from '../imagenes/2.jpg';
+import image3 from '../imagenes/3.jpg';
 
 const images = [image1, image2, image3];
 
