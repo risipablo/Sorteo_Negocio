@@ -3,9 +3,9 @@ import { useState,useRef } from 'react';
 import '../estilos/carousel.css';
 
 const images = [
-    '/src/imagenes/1.png',
-    '/src/imagenes/2.png',
-    '/src/imagenes/3.png'
+"../src/imagenes/1.jpg",
+    '../src/imagenes/2.jpg',
+    '../src/imagenes/3.jpg'
 ];
 
     const Carousel = () => {
