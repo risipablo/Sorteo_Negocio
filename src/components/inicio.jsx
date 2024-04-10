@@ -9,8 +9,8 @@ import video1 from "../imagenes/fe.mp4"
 
 export const Inicio = () =>{
     
-    const imagen = [imagen1]
-    const video = [video1]
+    const imagen = imagen1;
+    const video = video1;
 
     return(
         <section className="inicio">
@@ -25,11 +25,13 @@ export const Inicio = () =>{
                 <h2>¿ Como participar ?</h2>
                 <div className="par">
                 <NavLink to="/participar"> <span>👉</span> <a> Ver instrucciones </a></NavLink>
+            
                 </div>
             </section>
 
             <div className="imagen">
-                <img src={imagen} alt="" />
+                <img src={imagen} alt="asdasdas" />
+                <NavLink to="/sorteo">  <span>👉</span> <a> Ver participantes </a> </NavLink>
             </div>
 
             <section className="carousel">
@@ -43,16 +45,16 @@ export const Inicio = () =>{
             <section className="sorteo">
                 <h2>El sorteo finaliza en  </h2>
                 <Reloj/>
-                
                 <p> Los ganadores se anunciaran el 29/04 por Instagram</p>
-                
             </section>
+
+            
 
             <section className="redes">
                 <h2> Nuestras redes </h2>
                 <div className="iconos">
-                <i className="fa-brands fa-instagram"> <a href="https://www.instagram.com/bambinapetshop/"></a></i>
-                <i className="fa-brands fa-facebook"> <a href="https://www.facebook.com/Bambina.alimentosyaccesorios/"></a></i>
+                <a href="https://www.instagram.com/bambinapetshop/"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Bambina.alimentosyaccesorios/"><i className="fa-brands fa-facebook"></i> </a>
                 </div>
             </section>
 

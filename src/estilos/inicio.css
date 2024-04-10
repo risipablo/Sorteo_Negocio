@@ -39,8 +39,16 @@ h2{
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
+    margin: .7rem .4rem;
+}
+
+.imagen a{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     margin: .7rem;
 }
+
 
 .imagen{
     width: 100%;

@@ -3,6 +3,7 @@ import { Participantes } from "./participantes";
 import { ThreeDots } from 'react-loader-spinner';
 import "../estilos/lista.css"
 import Reloj from "./reloj";
+import imagen1 from "../imagenes/Felicidades.png"
 
 
 function Sorteo() {
@@ -10,6 +11,7 @@ function Sorteo() {
     const participantes = ["Juan", "María", "Luis", "Ana", "Carlos", "Laura", "Pedro", "Sofía", "Diego", "Lucía", 
     "Javier", "Valentina", "Miguel", "Elena", "Andrés", "Camila", "José", "Isabella", "Gabriel", "Daniela"]
 
+    const imagen = imagen1
 
     const [ganador1, setGanador1] = useState('')
     const [ganador2, setGanador2] = useState('')
@@ -45,12 +47,12 @@ function Sorteo() {
         <section className="master">
             <h2> Participantes </h2>
                 <Participantes participantes={participantes} />
-                <Reloj/>
 
                 <div className="relojsorteo">
                     <p> Se habilitara el 29/04</p>
                 </div>
-                    
+                <Reloj/>
+
                 {/* disabled={sorteoRealizado} */}
 
                 <button onClick={() => { generarGanador(); setSorteoRealizado(true); }} >  
@@ -72,7 +74,7 @@ function Sorteo() {
                         <h2 > {
                         ganador1 && ganador2 && ganador3 && (
                             <>
-                            <p className="ganador4"> Felicidades a los ganadores</p>
+                                <p className="ganador4"> <h3> Felicidades ganadores</h3> </p>
                                 <p className="ganador1"> Primer puesto: {ganador1}.  </p> 
                                 <p className="ganador2"> Segundo puesto: {ganador2}. </p> 
                                 <p  className="ganador3"> Tercer puesto:  {ganador3}.</p>
