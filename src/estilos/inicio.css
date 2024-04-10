@@ -2,7 +2,7 @@
 .inicio{
     color: #232324;
     text-align: center;
-    margin: 3.2rem auto;
+    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -14,7 +14,7 @@ h2{
 
 .video-container {
     position: relative; 
-    max-width: 100%; 
+    width: 100%; 
     
 }
 

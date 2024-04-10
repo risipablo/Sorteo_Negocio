@@ -48,7 +48,7 @@ function Sorteo() {
                 <Participantes participantes={participantes} />
 
                 <div className="relojsorteo">
-                    <p> Se habilitara el 29/04</p>
+                    <p> Se habilitara el 19/04</p>
                 </div>
                 <Reloj/>
 

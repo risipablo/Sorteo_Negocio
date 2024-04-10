@@ -4,7 +4,6 @@
     max-width:1200px; /* Ancho máximo ajustado */
     margin: 7rem auto 0rem;
     text-align: center;
-    color: #080616;
     cursor: pointer;
 }
 .premios h2{
@@ -14,8 +13,11 @@
 }
 
 h3 {
+    font-size: 1.2rem;
     text-align: center;
     margin:12px;
+    padding: 0 12px;
+    font-weight: 600;
 }
 
 .texto {
@@ -28,9 +30,9 @@ h3 {
 
 .texto li {
     position: relative;
-    margin: 2.2rem 0 1rem;
+    margin: 2.2rem 0 1.4rem;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.6;
 }
 
@@ -89,10 +91,12 @@ h3 {
         cursor: pointer;
     }
 
-
+    h3{
+        font-size: 1.6rem;
+    }
 
     .texto {
-        margin: 1rem auto; /* Ajustado para centrar horizontalmente */
+        margin: 1rem 0; /* Ajustado para centrar horizontalmente */
         
     }
 
