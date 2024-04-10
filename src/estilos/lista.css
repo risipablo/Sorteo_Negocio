@@ -116,5 +116,18 @@
 
 
     @media (min-width: 768px) {
-
+        .master {
+            max-width: 800px;
+            margin: 7rem auto 2rem;
+            min-height: 100vh;
+            text-align: center;
+        }
+    
+        .participantes {
+            flex-direction: row;
+        }
+    
+        .listado-item {
+            flex: 1 1 auto;
+        }
     }

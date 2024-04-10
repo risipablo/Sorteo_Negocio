@@ -6,7 +6,7 @@ function Reglas(){
 
     return(
         <section className="reglas">
-            <h2> ¿ Como participar ?</h2>
+            <h2> ¿Cómo participar?</h2>
 
             
             <div className="numeros">
@@ -25,7 +25,7 @@ function Reglas(){
             </div>
 
             <div className="info">
-                <h4> Si cumplistes con estos requisitos, ya estas participando en nuestro sorteo.</h4>
+                <h4> Si cumpliste con estos requisitos, ya estás participando en nuestro sorteo.</h4>
                 <h3> Buena Suerte 💪</h3>
             </div>
 

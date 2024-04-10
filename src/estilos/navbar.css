@@ -8,18 +8,25 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; 
-    padding: 9px;
+    padding: 12px;
+}
+.logo{
+    display: flex;
 }
 
+.logo img{
+    width: 40px;
+    height: auto;
+}
+
+.logo:hover{
+    transition: .7s;
+
+}
 .logo {
     order: 2; 
-}
-
-.logo p{
-    color:#f0ecec;
-    font-size: 1.2rem;
 }
 
 
@@ -50,19 +57,22 @@
 
 
 .active a {
-    border-bottom: 2px solid;
-    padding: 12px;
-    color: #f0ecec;
+    color: #363636fb;
 }
 
 
 @media (max-width: 850px) {
 
     .navbar {
+        justify-content: space-between;
         padding: 9px;
     }
 
-
+    .logo img{
+        width: 35px;
+        height: auto;
+    }
+  
 
     .menu {
         position: absolute;
@@ -92,9 +102,9 @@
     .menu-icon span {
         display: block;
         height: 3px;
-        width: 20px;
+        width: 22px;
         background-color: #f0ecec;
-        margin: 4px 8px;
+        margin: 4px 12px;
         transition: opacity 0.3s ease-in-out;
     }
 

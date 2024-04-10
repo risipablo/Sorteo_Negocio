@@ -5,34 +5,56 @@ import Reloj from "./reloj"
 import Carousel from "./carousel";
 import imagen1 from "../imagenes/pata.png"
 import video1 from "../imagenes/fe.mp4"
+import video2 from "../imagenes/video.mp4"
+import ProgressBar from "react-scroll-progress-bar";
 
 
 export const Inicio = () =>{
     
     const imagen = imagen1;
     const video = video1;
+    const vide0 = video2;
 
     return(
+        <>
+        <ProgressBar height="3" bgcolor="#red" duration="0.2" />
         <section className="inicio">
+            
             <section className="video-container">
-                <video autoPlay loop>
-                    <source src={video} type="video/mp4" />
-                </video>
+                <div className="vid1">
+                    <video autoPlay loop>
+                        <source  src={video} type="video/mp4" />
+                    </video>
+                </div>
+
+                <div className="vid2">
+                    <video autoPlay loop>
+                        <source src={vide0} type="video/mp4" />
+                    </video>
+                </div>
+
             </section>
 
+            <section className="section">
+                <div className="participar">
+                    <h2>¿Cómo participar?</h2>
+                    <div className="par">
+                    <NavLink to="/participar"> <span>👉</span> <a> Ver instrucciones </a></NavLink>
+                    </div>
+                </div>
 
-            <section className="participar">
-                <h2>¿ Como participar ?</h2>
-                <div className="par">
-                <NavLink to="/participar"> <span>👉</span> <a> Ver instrucciones </a></NavLink>
-            
+                <div className="participar">
+                    <h2>Lista de participantes</h2>
+                    <div  className="par">
+                        <NavLink to="/sorteo">  <span>👉</span> <a> Ver participantes </a> </NavLink>
+                    </div>
                 </div>
             </section>
 
             <div className="imagen">
                 <img src={imagen} alt="asdasdas" />
-                <NavLink to="/sorteo">  <span>👉</span> <a> Ver participantes </a> </NavLink>
             </div>
+
 
             <section className="carousel">
                 <h2> ¡Participa por estos premios! </h2>
@@ -45,7 +67,7 @@ export const Inicio = () =>{
             <section className="sorteo">
                 <h2>El sorteo finaliza en  </h2>
                 <Reloj/>
-                <p> Los ganadores se anunciaran el 29/04 por Instagram</p>
+                <p> Los ganadores se anunciaran el 19/04 por Instagram</p>
             </section>
 
             
@@ -59,6 +81,6 @@ export const Inicio = () =>{
             </section>
 
         </section>
-
+        </>
     )
 }

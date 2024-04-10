@@ -3,13 +3,11 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-
 }
 
 .slide {
     display: none;
     width: 100%;
-
 }
 
 .active {
@@ -42,4 +40,35 @@
 
 .next {
     right: 0;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        position: relative;
+        width: 70%; /* Reduciendo el ancho del carrusel para que no ocupe toda la pantalla */
+        margin: 0 auto; /* Centrando horizontalmente */
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    
+    .slide {
+        display: none;
+        width: 100%;
+    }
+    
+    .active {
+        display: block;
+    }
+    
+    .slide img {
+        width: 100%; /* Haciendo que las imágenes ocupen el 100% del ancho del carrusel */
+        height: auto;
+    }
+    
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-20%);
+    }    
 }

@@ -3,15 +3,14 @@ import { Participantes } from "./participantes";
 import { ThreeDots } from 'react-loader-spinner';
 import "../estilos/lista.css"
 import Reloj from "./reloj";
-import imagen1 from "../imagenes/Felicidades.png"
+
 
 
 function Sorteo() {
 
-    const participantes = ["Juan", "María", "Luis", "Ana", "Carlos", "Laura", "Pedro", "Sofía", "Diego", "Lucía", 
-    "Javier", "Valentina", "Miguel", "Elena", "Andrés", "Camila", "José", "Isabella", "Gabriel", "Daniela"]
+    const participantes = ["Se iran mostrando los participantes"]
 
-    const imagen = imagen1
+
 
     const [ganador1, setGanador1] = useState('')
     const [ganador2, setGanador2] = useState('')
@@ -53,9 +52,9 @@ function Sorteo() {
                 </div>
                 <Reloj/>
 
-                {/* disabled={sorteoRealizado} */}
 
-                <button onClick={() => { generarGanador(); setSorteoRealizado(true); }} >  
+
+                <button onClick={() => { generarGanador(); setSorteoRealizado(true); } } disabled={sorteoRealizado} >  
                 Sortear 
                 </button>
 
@@ -65,7 +64,7 @@ function Sorteo() {
                             visible={true}
                             height="100"
                             width="100"
-                            color="purple" // Cambiar el color a púrpura
+                            color="purple"
                             radius="9"
                             ariaLabel="three-dots-loading"
                         />

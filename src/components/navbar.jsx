@@ -1,6 +1,7 @@
 import { NavLink} from 'react-router-dom';
 import "../estilos/navbar.css"
 import { useState } from 'react';
+import logo1 from "../imagenes/navbar.png"
 
 function NavMenu() {
 
@@ -14,6 +15,7 @@ function NavMenu() {
         Setopen (false)
     }
 
+    const logo = logo1;
 
 
     return(
@@ -29,7 +31,7 @@ function NavMenu() {
                 </div>
 
                 <div className='logo'> 
-                <NavLink to="/"> <p>Inicio</p></NavLink>
+                <NavLink to="/"><img src={logo} alt="logo" /></NavLink>
                 </div>
 
                 <div className='menu-icon' onClick={abrirMenu}>
