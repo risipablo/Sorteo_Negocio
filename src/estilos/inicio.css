@@ -2,7 +2,7 @@
 .inicio{
     color: #232324;
     text-align: center;
-    margin: 0 auto;
+    margin: 2.7rem auto;
     cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ h2{
     }
 
     .video-container{
-        margin: 3rem 0;
+        margin: 0 auto;
     }
 
     .vid2 video {
