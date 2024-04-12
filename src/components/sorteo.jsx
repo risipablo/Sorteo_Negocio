@@ -8,7 +8,9 @@ import Reloj from "./reloj";
 
 function Sorteo() {
 
-    const participantes = ["Se iran mostrando los participantes"]
+    const participantes = ["Lucia Trovato","Milena Olivares","Florencia Mileva","Monica Beatriz","Anabella Morelli", "Maria Fernanda Martinez", "Agustina Bonetti","Ivana Mirella",
+        "Ludmila Quillen","Patricia Tobares","Mariu Langley","Luzmilla Vasquez", "Eliana Castelli", "Debora Illanes","Ludmila Sampiterna","Ro Langley","Ana Gallesi","Lourdes Velazquez", "Ezequiel Diocares",
+        "Silva Soraya", "Sonia Moran", "Juli Jara", "Dani Parra", "Casandra Carrasco"]
 
 
 
