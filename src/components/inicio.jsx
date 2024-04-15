@@ -4,35 +4,24 @@ import "../estilos/inicio.css"
 import Reloj from "./reloj"
 import Carousel from "./carousel";
 import imagen1 from "../imagenes/pata.png"
-import video1 from "../imagenes/fe.mp4"
-import video2 from "../imagenes/video.mp4"
-import ProgressBar from "react-scroll-progress-bar";
+import sorteo1 from "../imagenes/fe.jpg"
+
+
 
 
 export const Inicio = () =>{
     
     const imagen = imagen1;
-    const video = video1;
-    const vide0 = video2;
+    const sorteo = sorteo1;
+
 
     return(
         <>
-        <ProgressBar height="3" bgcolor="#red" duration="0.2" />
+
         <section className="inicio">
             
-            <section className="video-container">
-                <div className="vid1">
-                    <video autoPlay loop>
-                        <source  src={video} type="video/mp4" />
-                    </video>
-                </div>
-
-                <div className="vid2">
-                    <video autoPlay loop>
-                        <source src={vide0} type="video/mp4" />
-                    </video>
-                </div>
-
+            <section className="img-container">
+                <img src={sorteo} alt="" />
             </section>
 
             <section className="section">

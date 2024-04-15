@@ -85,24 +85,32 @@
         transition: opacity 1s ease-in-out;
     }
 
+    .img{
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        max-width: 350px;
+        height: auto;
+        padding: 0 2rem ;
+    }
+/* 
     .ganador4 h3{
         color: rgb(233, 29, 29);
         font-size: 1.6rem;
     }
-
-    .ganador4{
-        animation: aparecer 1s 4s forwards ;
-    }
+*/
+    .img{
+        animation: aparecer 1s 7s forwards ;
+    } 
     .ganador1 {
-        animation: aparecer 1s 3s forwards;
+        animation: aparecer 2s 6s forwards;
     }
 
     .ganador2 {
-        animation: aparecer 1s 2s forwards;
+        animation: aparecer 2s 4s forwards;
     }
 
     .ganador3 {
-        animation: aparecer 1s 1s forwards;
+        animation: aparecer 2s 2s forwards;
     }
 
     @keyframes aparecer {

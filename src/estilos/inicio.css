@@ -2,7 +2,7 @@
 .inicio{
     color: #232324;
     text-align: center;
-    margin: 2.7rem auto;
+    margin: 2.7rem auto; 
     cursor: pointer;
 }
 
@@ -12,37 +12,24 @@ h2{
     letter-spacing: 1px;
 }
 
-.video-container {
-    position: relative; 
-    width: 100%; 
-    
+.img-container {
+    text-align: center; 
+    margin: 2rem auto; 
 }
 
-.video-container  .vid1 video {
-    width: 100%; 
+.img-container img {
+    max-width: 100%; 
     height: auto; 
-    top:0;
+    display: block; 
 }
 
- .vid2 video{
-    display: none;
-}
-
-@media (min-width: 600px) {
-    .vid1 video{
-        display: none;
-    }
-
-    .video-container{
-        margin: 0 auto;
-    }
-
-    .vid2 video {
-        display: flex;
-        width: 100%; 
-        height: 600px; 
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .img-container {
+        margin: 1rem auto; /
     }
 }
+
 
 
 .carousel,
@@ -81,6 +68,7 @@ h2{
     justify-content: center;
     font-size: 1.2rem;
     margin: .7rem .4rem;
+    color: #181717;
 }
 
 a:hover{
@@ -95,7 +83,7 @@ a:hover{
 
 .imagen img{
     margin: 22px 0;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
 } 
 
@@ -127,7 +115,7 @@ a:hover{
 
 .iconos i{
     font-size: 2.5rem;
-    margin: 1.8rem 2rem 0px;
+    margin: 1rem 2rem 0;
 }
 
 .fa-instagram {

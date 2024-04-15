@@ -3,14 +3,14 @@ import { Participantes } from "./participantes";
 import { ThreeDots } from 'react-loader-spinner';
 import "../estilos/lista.css"
 import Reloj from "./reloj";
+import data from "./participantes.json"
+import ganador from "../imagenes/Felicidades.png"
 
 
 
 function Sorteo() {
 
-    const participantes = ["Lucia Trovato","Milena Olivares","Florencia Mileva","Monica Beatriz","Anabella Morelli", "Maria Fernanda Martinez", "Agustina Bonetti","Ivana Mirella",
-        "Ludmila Quillen","Patricia Tobares","Mariu Langley","Luzmilla Vasquez", "Eliana Castelli", "Debora Illanes","Ludmila Sampiterna","Ro Langley","Ana Gallesi","Lourdes Velazquez", "Ezequiel Diocares",
-        "Silva Soraya", "Sonia Moran", "Juli Jara", "Dani Parra", "Casandra Carrasco"]
+    const participantes = data;
 
 
 
@@ -56,7 +56,7 @@ function Sorteo() {
 
 
 
-                <button onClick={() => { generarGanador(); setSorteoRealizado(true); } } disabled={sorteoRealizado} >  
+                <button onClick={() => { generarGanador(); setSorteoRealizado(true); } } disabled={sorteoRealizado}  >  
                 Sortear 
                 </button>
 
@@ -75,7 +75,7 @@ function Sorteo() {
                         <h2 > {
                         ganador1 && ganador2 && ganador3 && (
                             <>
-                                <p className="ganador4"> <h3> Felicidades ganadores</h3> </p>
+                                <img src={ganador} alt="" className="img"/>
                                 <p className="ganador1"> Primer puesto: {ganador1}.  </p> 
                                 <p className="ganador2"> Segundo puesto: {ganador2}. </p> 
                                 <p  className="ganador3"> Tercer puesto:  {ganador3}.</p>
