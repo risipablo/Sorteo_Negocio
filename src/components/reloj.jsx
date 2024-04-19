@@ -12,12 +12,12 @@ function Reloj(){
     useEffect(() => {
         const intervalo = setInterval(() => {
             const hoy = new Date (); // fecha actual 
-            const limite = new Date("2024-04-19T12:59:00")
+            const limite = new Date()
 
             const diaRestante = (limite.getDate() - hoy.getDate())
             const horaRestante = (limite.getHours() + 24  - hoy.getHours()) % 24 ;
             const minRestante = (limite.getMinutes() + 60 - hoy.getMinutes()) % 60;
-            const segRestante = ( (limite.getSeconds() + 59 - hoy.getSeconds())) 
+            const segRestante = ( (limite.getSeconds() + 0 - hoy.getSeconds())) 
 
             setDia(diaRestante)
             setHora(horaRestante);
