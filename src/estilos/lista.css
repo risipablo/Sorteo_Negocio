@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
     .master{
         margin: 7rem auto 2rem;
         min-height: 100vh;
@@ -100,6 +102,9 @@
 */
     .img{
         animation: aparecer 1s 7s forwards ;
+        font-size: 2rem;
+        color: #646cff;
+        font-family: "Jersey 20", sans-serif;
     } 
     .ganador1 {
         animation: aparecer 2s 6s forwards;
